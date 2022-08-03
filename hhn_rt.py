@@ -32,7 +32,7 @@ class MyStreamListener(tweepy.Stream):
         run_into_the_fog(twts)
 
     def on_closed(self, response):
-        print(self.response)
+        print(response)
 
 #create instance
 stream = MyStreamListener(conf.consumer_key, conf.consumer_secret, conf.access_token, conf.access_token_secret)
